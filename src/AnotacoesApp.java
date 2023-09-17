@@ -16,12 +16,16 @@ public class AnotacoesApp {
         this.anotacoes.add(anotacao);
     }
 
-    public void removeAnotacao (Anotacao anotacao){
-        this.anotacoes.remove(anotacao);
+    public void removeAnotacao (Integer anotacao){
+        this.anotacoes.remove(this.anotacoes.get(anotacao));
     }
 
     public void editaAnotacao(Anotacao anotacao, Anotacao anotacaoEditada){
         anotacoes.add(anotacoes.indexOf(anotacao), anotacaoEditada);
+    }
+
+    public List<Anotacao> getAnotacoes() {
+        return anotacoes;
     }
 
     @Override

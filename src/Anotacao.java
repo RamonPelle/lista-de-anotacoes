@@ -40,8 +40,8 @@ public class Anotacao {
 
     @Override
     public String toString() {
-        return "Titulo = " + titulo +
-                " Data = " + data +
-                " Conteúdo = " + anotacao + '\n';
+        return "Titulo: " + titulo +
+                " Conteúdo = " + anotacao +
+                " Data: " + data + '\n';
     }
 }
